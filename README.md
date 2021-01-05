@@ -5,3 +5,9 @@
 
 - [ ] Fix video searching
 - [ ] Rewrite all in Python
+
+### Example output:
+(Click to watch full YouTube video)
+
+[![Click to watch full YouTube video](https://github.com/nieopierzony/tiktokbot/blob/main/docs/example.gif)](https://www.youtube.com/watch?v=DhBCXKzanSU)
+
