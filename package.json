@@ -1,6 +1,6 @@
 {
   "name": "tiktok-bot",
-  "version": "0.0.1",
+  "version": "0.9.1",
   "description": "Finds videos from TikTok and compiles them for ready-youtube video",
   "main": "./src/index.js",
   "repository": "https://github.com/nieopierzony/tiktokbot.git",
