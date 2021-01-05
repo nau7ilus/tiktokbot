@@ -1,0 +1,32 @@
+{
+  "name": "tiktok-bot",
+  "version": "0.0.1",
+  "description": "Finds videos from TikTok and compiles them for ready-youtube video",
+  "main": "./src/index.js",
+  "repository": "https://github.com/nieopierzony/tiktokbot.git",
+  "author": "Philipp Zelinski",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "nodemon ."
+  },
+  "devDependencies": {
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "nodemon": "^2.0.6",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "@mesh.js/core": "^1.1.20",
+    "async": "^3.2.0",
+    "canvas": "^2.6.1",
+    "ffcreator": "^1.3.10",
+    "ffmpeg": "^0.0.4",
+    "fs-extra": "^9.0.1",
+    "sharp": "^0.27.0",
+    "tiktok-scraper": "^1.4.10",
+    "util": "^0.12.3"
+  }
+}
