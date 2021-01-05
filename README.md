@@ -5,6 +5,7 @@
 
 - [ ] Fix video searching
 - [ ] Rewrite all in Python
+- [ ] Make cli to use program
 
 ### Example output:
 (Click to watch full YouTube video)
