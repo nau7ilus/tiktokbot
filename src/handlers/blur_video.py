@@ -26,18 +26,6 @@ def cover_img(can, img):
         can.paste(img, (0, int((can_h - img.size[1]) / 2)))
 
 
-def reduce_opacity(im, opacity):
-    assert 0 <= opacity <= 1
-    if im.mode != 'RGBA':
-        im = im.convert('RGBA')
-    else:
-        im = im.copy()
-    alpha = im.split()[3]
-    alpha = ImageEnhance.Brightness(alpha).enhance(opacity)
-    im.putalpha(alpha)
-    return im
-
-
 def download_image(url):
     try:
         res = requests.get(url, stream=True).raw
