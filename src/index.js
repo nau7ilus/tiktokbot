@@ -6,7 +6,7 @@ const blurVideo = require('./handlers/blurVideo');
 (async () => {
   try {
     const posts = await TikTokScraper.hashtag('overwhelmed', {
-      number: 10,
+      number: 1,
       download: true,
     });
 

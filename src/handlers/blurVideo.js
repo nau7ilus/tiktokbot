@@ -53,7 +53,7 @@ module.exports = async (input, videoData) => {
     console.log('Encoding');
     await exec(
       // eslint-disable-next-line max-len
-      `ffmpeg -hwaccel cuda -r 30 -i temp/${videoData.id}/edited-frames/%d.png -c:v libx264 -vf fps=30 -pix_fmt yuv420p temp/${videoData.id}/no-audio.mp4`,
+      `ffmpeg -f image2 -framerate 30 -i temp/${videoData.id}/edited-frames/%d.png -c:v libx264 -vf fps=30 -pix_fmt yuv420p temp/${videoData.id}/no-audio.mp4`,
       { shell: true },
     );
 
