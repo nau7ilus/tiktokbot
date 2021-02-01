@@ -43,7 +43,7 @@ module.exports = async (input, videoData) => {
   await fs.mkdir(`./temp/${videoData.id}/edited-frames`);
 
   console.log('Decoding');
-  await exec(`ffmpeg -hwaccel cuda -i ${input} -vf fps=30 temp/${videoData.id}/raw-frames/%d.png`);
+  await exec(`ffmpeg -hwaccel cuda -i ${input} -vf fps=30 temp/${videoData.id}/raw-frames/%d.png`, { shell: true });
 
   try {
     console.log('Rendering');
@@ -54,11 +54,13 @@ module.exports = async (input, videoData) => {
     await exec(
       // eslint-disable-next-line max-len
       `ffmpeg -hwaccel cuda -r 30 -i temp/${videoData.id}/edited-frames/%d.png -c:v libx264 -vf fps=30 -pix_fmt yuv420p temp/${videoData.id}/no-audio.mp4`,
+      { shell: true },
     );
 
     console.log('Adding audio');
     await exec(
       `ffmpeg -i temp/${videoData.id}/no-audio.mp4 -i ${input} -c copy -map 0:v:0 -map 1:a:0 output/${Date.now()}.mp4`,
+      { shell: true },
     );
 
     console.log('Cleaning up');
