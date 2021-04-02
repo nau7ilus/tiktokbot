@@ -26,7 +26,7 @@
     "ffmpeg": "^0.0.4",
     "fs-extra": "^9.0.1",
     "sharp": "^0.27.0",
-    "tiktok-scraper": "^1.4.10",
+    "tiktok-scraper": "^1.4.22",
     "util": "^0.12.3"
   }
 }

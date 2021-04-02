@@ -3743,10 +3743,10 @@ through2@^0.6.3:
     readable-stream ">=1.0.33-1 <1.1.0-0"
     xtend ">=4.0.0 <4.1.0-0"
 
-tiktok-scraper@^1.4.10:
-  version "1.4.10"
-  resolved "https://registry.yarnpkg.com/tiktok-scraper/-/tiktok-scraper-1.4.10.tgz#b18efd352f6cc541e3e85e2699f5629bdf23145b"
-  integrity sha512-LCl7M9lL65YIGKh1AuH3grW0cAHTkU4xYIzJNf4wvr2S9pTbQsMAmI3WD+A3eb3YYuqivxEJyxqXLibH+KEqSw==
+tiktok-scraper@^1.4.22:
+  version "1.4.22"
+  resolved "https://registry.yarnpkg.com/tiktok-scraper/-/tiktok-scraper-1.4.22.tgz#57eb71221c7975ca649c96d779b84ec63de2a66f"
+  integrity sha512-0+ANKjbFFe2PMcZpKuhHFY8/QY7r0yD5I6m+SjN0+kO4oVlMfitZX7lP63cyEfhGQdu06uopP9M9pWExOQV7/w==
   dependencies:
     archiver "^3.1.1"
     async "^3.1.0"
