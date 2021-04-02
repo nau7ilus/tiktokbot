@@ -5,8 +5,8 @@ const blurVideo = require('./handlers/blurVideo');
 
 (async () => {
   try {
-    const posts = await TikTokScraper.hashtag('overwhelmed', {
-      number: 10,
+    const posts = await TikTokScraper.hashtag('wtf', {
+      number: 1,
       download: true,
     });
 
@@ -15,7 +15,7 @@ const blurVideo = require('./handlers/blurVideo');
       const { id, authorMeta, diggCount, shareCount, commentCount } = video;
       const { name, nickName, avatar, verified } = authorMeta;
 
-      blurVideo(`#overwhelmed/${id}.mp4`, {
+      blurVideo(`#wtf/${id}.mp4`, {
         id,
         diggCount,
         shareCount,
